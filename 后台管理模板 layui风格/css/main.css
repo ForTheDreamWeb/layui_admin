@@ -1,0 +1,367 @@
+/*css框架*/
+
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, hr, blockquote, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, textarea, th, td{
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    margin: 0;
+}
+textarea {
+    resize: none;
+}
+
+/*防止拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+
+    font: 12px/150% "Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
+    color: #666;
+    background: #fff
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+/*css初始化*/
+
+/*基础样式*/
+.text-center{
+    text-align: center !important;
+}
+.text-right{
+    text-align: right !important;
+}
+.text-left{
+	text-align: left !important;
+}
+.pull-right {
+	float: right !important;
+}
+.pull-left {
+	float: left !important;
+}
+.hide {
+	display: none !important;
+}
+.show {
+	display: block !important;
+}
+/*基础样式*/
+
+/*下拉菜单*/
+.drop-menu{
+	display: none;
+    min-width: 100%;
+    line-height: 36px;
+    padding: 5px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,.12);
+    border: 1px solid #d2d2d2;
+    background-color: #fff;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+.drop-menu li a{
+	display: block;
+    width: 100%;
+    line-height: 36px;
+    color: #666;
+}
+.drop-menu li a:hover{
+	background-color: #dddddd;
+	color: #333;
+}
+/*下拉菜单*/
+
+/*按钮*/
+.btn {
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 18px;
+    background-color: #009688;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    opacity: .9;
+    filter: alpha(opacity=90);
+}
+.btn:hover {
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+.btn:active {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.btn-primary {
+    border: 1px solid #C9C9C9;
+    background-color: #fff;
+    color: #555
+}
+.btn-primary:hover {
+    border-color: #009688;
+    color: #333
+}
+.btn-normal {
+    background-color: #1E9FFF
+}
+.btn-warm {
+    background-color: #F7B824
+}
+.btn-danger {
+    background-color: #FF5722
+}
+.btn-disabled,.btn-disabled:active,.btn-disabled:hover {
+    border: 1px solid #e6e6e6;
+    background-color: #FBFBFB;
+    color: #C9C9C9;
+    cursor: not-allowed;
+    opacity: 1;
+}
+.btn-big {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 25px;
+    font-size: 16px
+}
+.btn-small {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 12px
+}
+.btn-mini {
+    height: 22px;
+    line-height: 22px;
+    padding: 0 5px;
+    font-size: 12px
+}
+/*按钮*/
+
+/*表格*/
+.table {
+    width: 100%;
+    background-color: #fff
+}
+
+.table tr {
+    transition: all .3s;
+    -webkit-transition: all .3s
+}
+
+.table thead tr {
+    background-color: #f2f2f2
+}
+
+.table th {
+    text-align: left
+}
+
+.table td,.table th {
+    padding: 9px 15px;
+    min-height: 20px;
+    line-height: 20px;
+    border: 1px solid #e2e2e2;
+    font-size: 14px
+}
+/*偶数行背景*/
+.table tr:hover,.table-even tr:nth-child(even) {
+    background-color: #f8f8f8
+}
+
+.table-line,.table-row {
+    border: 1px solid #e2e2e2
+}
+/*行边框风格*/
+.table-line td,.table-line th {
+    border: none;
+    border-bottom: 1px solid #e2e2e2
+}
+/*列边框风格*/
+.table-row td,.table-row th {
+    border: none;
+    border-right: 1px solid #e2e2e2
+}
+/*无边框风格*/
+.table-nob td,.table-nob th {
+    border: none
+}
+
+.table-view .table {
+    margin: 0
+}
+
+.table-cell {
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 10px
+}
+/*表格*/
+
+/*表单*/
+.form{
+
+}
+.form-item {
+    margin-bottom: 15px;
+    clear: both;
+    *zoom:1;
+}
+.form-item:after {
+    content: '\20';
+    clear: both;
+    *zoom:1;display: block;
+    height: 0
+}
+.input-block {
+	position: relative;
+    margin-left: 90px;
+    min-height: 36px
+}
+.input-inline {
+    display: inline-block;
+    vertical-align: middle
+}
+.form-label {
+    float: left;
+    display: block;
+    padding: 9px 15px;
+    width: 60px;
+    font-weight: 400;
+    text-align: right
+}
+.input{
+    display: block;
+    padding-left: 10px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.input:hover,.textarea:hover{
+	border-color: #D2D2D2!important;
+}
+.input:focus,.textarea:focus{
+	border-color: #C9C9C9!important;
+}
+.form-select{
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555555;
+	background-color: #ffffff;
+	background-image: none;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.checkbox-inline{
+	position: relative;
+	display: inline-block;
+	margin-right: 15px;
+	margin-bottom: 0;
+	vertical-align: middle;
+	font-weight: normal;
+	cursor: pointer;
+}
+.checkbox-inline input[type="checkbox"],.checkbox-inline input[type="radio"]{
+    margin-right:5px;
+    margin-top:-1.5px; 
+    margin-bottom:1px;
+}
+.textarea{
+	min-height: 50px;
+	font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    outline: 0;
+    border-radius: 0 0 2px 2px;
+    padding: 5px;
+}
+/*表单*/
+
+/*引用*/
+.elem-quote {
+    margin-bottom: 10px;
+    padding: 15px;
+    line-height: 22px;
+    border-left: 5px solid #009688;
+    border-radius: 0 2px 2px 0;
+    background-color: #f2f2f2
+}
+/*引用*/
+
+/*css框架

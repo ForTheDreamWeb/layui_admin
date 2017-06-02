@@ -1,0 +1,69 @@
+/*主页*/
+.show-model{
+	height: 60px;
+	line-height: 60px;
+}
+.show-model a{
+	font-size: 16px;
+	color: #333;
+}
+/*主页*/
+
+/*按钮页*/
+.show-btn{
+	margin: 20px auto;
+}
+.show-btn button{
+	margin-right: 15px;
+}
+/*按钮页*/
+
+/*颜色页*/
+.show-color{
+    display: inline-block;
+    width: 20%;
+    height: 40px;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    margin: 20px 1%;
+}
+.show-color i{
+	font-family: normal;
+	color: #fff;
+}
+.show-gray{
+    display: inline-block;
+    width: 13%;
+    height: 20px;
+    padding: 20px 0;
+    color: #666;
+    text-align: center;
+    font-size: 12px;
+    margin: 20px 0;
+    margin-right: -4px;
+}
+/*颜色页*/
+
+/*表单*/
+.show-form .input{
+	width: 90%;
+}
+.show-form .form-select{
+	width: 90%;
+}
+.show-form .input-block{
+	line-height:36px; 
+	vertical-align:middle;
+}
+.show-form .textarea{
+	width: 90%;
+}
+/*表单*/
+
+
+
+
+
+
